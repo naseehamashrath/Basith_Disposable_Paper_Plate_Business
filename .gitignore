@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# Flask & Database
+instance/
+*.db
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db

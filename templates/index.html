@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basith Paper Plates | Premium Disposable Products</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Noto+Sans+Telugu:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <div class="logo">Basith Paper Plates</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECTION 1: HERO POSTER -->
+    <section id="hero" class="hero-section">
+        <div class="hero-slideshow">
+            <div class="slide" style="background-image: url('{{ url_for('static', filename='assets/plates.webp') }}');">
+            </div>
+            <div class="slide" style="background-image: url('{{ url_for('static', filename='assets/cups.jpg') }}');">
+            </div>
+            <div class="slide" style="background-image: url('{{ url_for('static', filename='assets/glasses.jpg') }}');">
+            </div>
+            <div class="slide"
+                style="background-image: url('{{ url_for('static', filename='assets/tiffin_plates.jpg') }}');"></div>
+        </div>
+        <div class="overlay"></div>
+        <div class="hero-content fade-in-up">
+            <h1>Quality Service &<br>Premium Disposables</h1>
+            <h2 class="telugu-heading">బసిత్ పేపర్ ప్లేట్స్</h2>
+            <p class="tagline">Quality Wholesale & Retail</p>
+            <div class="cta-group">
+                <a href="#contact" class="btn btn-primary">Get Bulk Quote</a>
+                <a href="https://wa.me/919010385616" class="btn btn-whatsapp" target="_blank">WhatsApp Chat</a>
+
+                <div class="call-card abstract-bg">
+                    <span class="call-label">Call Us for Orders:</span>
+                    <div class="call-numbers">
+                        <a href="tel:9010385616">90103 85616</a>
+                        <a href="tel:6300624719">63006 24719</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT / WHY CHOOSE US -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Why Choose Basith?</h2>
+                <p>We manufacture and supply all kinds of paper plates, bowls, cups and disposable items.</p>
+                <p class="telugu-text">మేము అన్ని రకాల పేపర్ ప్లేట్లు, కప్పులు, బౌల్స్ మరియు డిస్పోజబుల్ వస్తువులను
+                    తయారు చేసి విక్రయిస్తాము.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card fade-in delay-1">
+                    <div class="icon">✨</div>
+                    <h3>Premium Quality</h3>
+                    <h4 class="telugu-sub">అత్యుత్తమ నాణ్యత</h4>
+                    <p>High-grade materials ensuring durability and hygiene for all occasions.</p>
+                    <p class="telugu-text-xs">అన్ని సందర్భాలకు సరిపోయేలా దృఢమైన మరియు శుభ్రమైన ఉత్పత్తులు.</p>
+                </div>
+                <div class="feature-card fade-in delay-2">
+                    <div class="icon">📦</div>
+                    <h3>Wholesale & Retail</h3>
+                    <h4 class="telugu-sub">హోల్‌సేల్ & రిటైల్</h4>
+                    <p>Best prices for bulk orders. Perfect for events, hotels, and resellers.</p>
+                    <p class="telugu-text-xs">బల్క్ ఆర్డర్‌ల కోసం ఉత్తమ ధరలు. ఈవెంట్‌లు, హోటళ్లు మరియు రీసెల్లర్‌లకు
+                        అనుకూలం.</p>
+                </div>
+                <div class="feature-card fade-in delay-3">
+                    <div class="icon">🚚</div>
+                    <h3>Fast Delivery</h3>
+                    <h4 class="telugu-sub">వేగవంతమైన డెలివరీ</h4>
+                    <p>Reliable supply chain ensuring your order reaches you on time.</p>
+                    <p class="telugu-text-xs">మీ ఆర్డర్ సమయానికి చేరేలా నమ్మకమైన సరఫరా.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PRODUCTS GALLERY -->
+    <section id="products" class="section-padding dark-bg">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Products</h2>
+                <p>Explore our wide range of disposable essentials.</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 0: Paper Plates (ADDED) -->
+                <div class="product-card fade-in">
+                    <div class="img-box">
+                        <img src="{{ url_for('static', filename='assets/plates.webp') }}" alt="Paper Plates">
+                    </div>
+                    <div class="info-box">
+                        <h3>Paper Plates</h3>
+                        <p>High-quality buffet and dinner plates in all sizes.</p>
+                        <button class="btn-sm" onclick="enquireProduct('Paper Plates')">Enquire</button>
+                    </div>
+                </div>
+
+                <!-- Product 1: Cups -->
+                <div class="product-card fade-in">
+                    <div class="img-box">
+                        <img src="{{ url_for('static', filename='assets/cups.jpg') }}" alt="Paper Cups">
+                    </div>
+                    <div class="info-box">
+                        <h3>Paper Cups</h3>
+                        <p>Durable cups for tea, coffee, and juices.</p>
+                        <button class="btn-sm" onclick="enquireProduct('Paper Cups')">Enquire</button>
+                    </div>
+                </div>
+
+                <!-- Product 2: Glasses -->
+                <div class="product-card fade-in">
+                    <div class="img-box">
+                        <img src="{{ url_for('static', filename='assets/glasses.jpg') }}" alt="Disposable Glasses">
+                    </div>
+                    <div class="info-box">
+                        <h3>Juice Glasses</h3>
+                        <p>Transparent and sturdy glasses for cool drinks.</p>
+                        <button class="btn-sm" onclick="enquireProduct('Juice Glasses')">Enquire</button>
+                    </div>
+                </div>
+
+                <!-- Product 3: Spoons -->
+                <div class="product-card fade-in">
+                    <div class="img-box">
+                        <img src="{{ url_for('static', filename='assets/spoons.jpg') }}" alt="Disposable Spoons">
+                    </div>
+                    <div class="info-box">
+                        <h3>Plastic Spoons</h3>
+                        <p>High quality disposable spoons for events.</p>
+                        <button class="btn-sm" onclick="enquireProduct('Spoons')">Enquire</button>
+                    </div>
+                </div>
+
+                <!-- Product 4: Tiffin Plates -->
+                <div class="product-card fade-in">
+                    <div class="img-box">
+                        <img src="{{ url_for('static', filename='assets/tiffin_plates.jpg') }}" alt="Tiffin Plates">
+                    </div>
+                    <div class="info-box">
+                        <h3>Tiffin Plates</h3>
+                        <p>Perfect size for breakfast and snacks.</p>
+                        <button class="btn-sm" onclick="enquireProduct('Tiffin Plates')">Enquire</button>
+                    </div>
+                </div>
+
+                <!-- Product 5: Snack Plates -->
+                <div class="product-card fade-in">
+                    <div class="img-box">
+                        <img src="{{ url_for('static', filename='assets/snacks_plates.jpg') }}" alt="Snack Plates">
+                    </div>
+                    <div class="info-box">
+                        <h3>Snack Plates</h3>
+                        <p>Small plates ideal for evening snacks.</p>
+                        <button class="btn-sm" onclick="enquireProduct('Snack Plates')">Enquire</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: CONTACT FORM -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <h2>Contact Us</h2>
+                    <p class="telugu-text">మా వద్ద అన్ని రకాల డిస్పోజబుల్ వస్తువులు లభించును</p>
+
+                    <div class="info-item">
+                        <div class="call-card abstract-bg"
+                            style="width: 100%; border-color: rgba(255,255,255,0.1); margin-top: 15px;">
+                            <span class="call-label" style="font-size: 1rem; color: var(--primary-color);">Call Us for
+                                Orders:</span>
+                            <div class="call-numbers" style="gap: 12px;">
+                                <a href="tel:9010385616" style="font-size: 1.8rem; letter-spacing: 1px;">90103 85616</a>
+                                <a href="tel:6300624719" style="font-size: 1.8rem; letter-spacing: 1px;">63006 24719</a>
+                                <a href="tel:7780777678" style="font-size: 1.8rem; letter-spacing: 1px;">77807 77678</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-box fade-in">
+                    <form id="enquiryForm">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" id="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label>Mobile Number</label>
+                            <input type="tel" id="phone" required placeholder="Enter mobile number">
+                        </div>
+                        <div class="form-group">
+                            <label>Interested Products (Enter Quantity)</label>
+                            <div class="product-qty-grid">
+                                <div class="qty-item">
+                                    <span>Paper Plates</span>
+                                    <input type="number" name="qty_plates" placeholder="Qty" min="0">
+                                </div>
+                                <div class="qty-item">
+                                    <span>Cups</span>
+                                    <input type="number" name="qty_cups" placeholder="Qty" min="0">
+                                </div>
+                                <div class="qty-item">
+                                    <span>Glasses</span>
+                                    <input type="number" name="qty_glasses" placeholder="Qty" min="0">
+                                </div>
+                                <div class="qty-item">
+                                    <span>Tiffin Plates</span>
+                                    <input type="number" name="qty_tiffin" placeholder="Qty" min="0">
+                                </div>
+                                <div class="qty-item">
+                                    <span>Snack Plates</span>
+                                    <input type="number" name="qty_snacks" placeholder="Qty" min="0">
+                                </div>
+                                <div class="qty-item">
+                                    <span>Spoons</span>
+                                    <input type="number" name="qty_spoons" placeholder="Qty" min="0">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Message (Optional)</label>
+                            <textarea id="message" rows="3" placeholder="Any specific requirements?"></textarea>
+                        </div>
+                        <p class="consent-text">By submitting, you agree to be contacted regarding your enquiry.</p>
+                        <button type="submit" class="btn btn-primary full-width">Send Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="telugu-text-sm">నాణ్యత • హోల్‌సేల్ & రిటైల్ • పెద్ద ఆర్డర్లు స్వీకరించబడును</p>
+            <p>&copy; 2026 Basith Paper Plates. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

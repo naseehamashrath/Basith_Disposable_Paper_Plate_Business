@@ -4,6 +4,11 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // 0. Apply Background Images (Fix for Linter)
+    document.querySelectorAll('[data-bg]').forEach(el => {
+        el.style.backgroundImage = `url('${el.dataset.bg}')`;
+    });
+
     // 1. Scroll Animations (IntersectionObserver)
     const observerOptions = {
         threshold: 0.1

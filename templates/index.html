@@ -33,14 +33,10 @@
     <!-- SECTION 1: HERO POSTER -->
     <section id="hero" class="hero-section">
         <div class="hero-slideshow">
-            <div class="slide" style="background-image: url('{{ url_for('static', filename='assets/plates.webp') }}');">
-            </div>
-            <div class="slide" style="background-image: url('{{ url_for('static', filename='assets/cups.jpg') }}');">
-            </div>
-            <div class="slide" style="background-image: url('{{ url_for('static', filename='assets/glasses.jpg') }}');">
-            </div>
-            <div class="slide"
-                style="background-image: url('{{ url_for('static', filename='assets/tiffin_plates.jpg') }}');"></div>
+            <div class="slide" data-bg="{{ url_for('static', filename='assets/plates.webp') }}"></div>
+            <div class="slide" data-bg="{{ url_for('static', filename='assets/cups.jpg') }}"></div>
+            <div class="slide" data-bg="{{ url_for('static', filename='assets/glasses.jpg') }}"></div>
+            <div class="slide" data-bg="{{ url_for('static', filename='assets/tiffin_plates.jpg') }}"></div>
         </div>
         <div class="overlay"></div>
         <div class="hero-content fade-in-up">
